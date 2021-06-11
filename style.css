@@ -8,6 +8,7 @@ body {
     background-color: black;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+    line-height: 150%;
 }
 
 div.wrapper {
@@ -110,9 +111,13 @@ div.title h2 {
 
 button.arrow {
     width: 100%;
+    margin-top: auto;
+    margin-bottom: 50px;
     border: none;
     background-color: transparent;
     font-size: 36px;
+    animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s 1 both;
+    text-shadow: 1px 1px 1px rgba(25, 25, 25, 1);
 }
 
 /* main  */
@@ -137,15 +142,22 @@ div.about img {
     border-radius: 20px;
 }
 
+div.text {
+    display: flex;
+    flex-direction: column;
+}
+
 div.text h1::after {
     display: block;
     content: '';
+    margin-top: 10px;
     width: 50%;
     height: 1px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 div.social {
+    margin-top: auto;
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
@@ -192,7 +204,7 @@ div.contact {
 }
 
 div.contact>* {
-    width: 80%;
+    width: 60%;
 }
 
 /* footer  */
@@ -237,5 +249,39 @@ div.footer {
     div.social {
         flex-direction: column;
         gap: 0;
+    }
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
     }
 }
