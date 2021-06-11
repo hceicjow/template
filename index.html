@@ -8,6 +8,7 @@
     <title>Template</title>
     <script src="https://kit.fontawesome.com/4adf243f14.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,14 +17,14 @@
             <div class="navWrapper">
                 <span class="logo">LoremIpsum</span>
                 <ul class="navigation">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#section0" class="scrollTo">Home</a></li>
+                    <li><a href="#section1" class="scrollTo">About</a></li>
                 </ul>
-                <a href="#" class="contact">Contact</a>
+                <a href="#section2" class="contact scrollTo">Contact</a>
             </div>
         </nav>
         <header>
-            <div class="overlay">
+            <div class="overlay" id="section0">
                 <div class="title">
                     <h1>LoremIpsum</h1>
                     <h2>the only lorem you need in your life.</h2>
@@ -34,7 +35,7 @@
             </div>
         </header>
         <main>
-            <div class="about">
+            <div class="section" id="section1">
                 <div class="text">
                     <h1>Lorem Ipsum</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus expedita, dicta suscipit eius
@@ -61,26 +62,58 @@
             </div>
         </main>
         <section>
-            <div class="contact">
-                <h3>Lorem Ipsum</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, aut molestiae consectetur tempore
-                    eveniet
-                    animi repudiandae quia totam enim optio corporis iure at excepturi ad voluptates atque nobis
-                    doloremque
-                    sapiente!
-                    Quos corporis non dolor laborum, impedit maxime laboriosam repudiandae minus earum deserunt libero
-                    assumenda veniam cupiditate fuga amet dignissimos? Placeat dolores illo autem voluptatibus
-                    consequatur
-                    rerum tempora corrupti quasi numquam.</p>
-            </div>
-        </section>
-        <footer>
-            <div class="footer">
-                &copy; 2021 Lorem Ipsum
-            </div>
-        </footer>
-    </div>
+            <div class="section" id="section2">
+                <div class="left">
+                    <div class="text">
+                        <h1>Biogrpahy</h1>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta facere nisi maxime
+                            distinctio
+                            laudantium minus iste eligendi, ad enim recusandae totam tempore sed, odio voluptate sint
+                            atque
+                            numquam quos molestias!
+                            Quis natus eveniet molestias cum porro voluptatibus rerum quas deleniti qui eius, dicta
+                            recusandae incidunt, non, similique nesciunt eligendi. Doloribus saepe, voluptas maiores
+                            debitis
+                            sequi in unde molestias perferendis accusamus!
+                            Voluptatibus veritatis pariatur magni minima porro placeat architecto amet cupiditate quae?
+                            Explicabo deserunt nobis maiores incidunt exercitationem, veritatis libero, placeat,
+                            perferendis
+                            saepe cumque officiis ipsum corporis quidem! Vitae, ut illo.
+                            Aperiam deleniti dignissimos a iure, inventore adipisci eos ipsam nesciunt dolor
+                            reprehenderit
+                            cumque omnis nostrum doloremque officiis veniam eum velit? Autem, quis distinctio magnam ex
+                            illo
+                            doloribus qui ut earum!
+                            Nesciunt quae dignissimos vitae similique. Fuga modi alias eveniet perferendis consequatur
+                            porro
+                            magni veritatis sequi quia mollitia ad eaque vitae, dolore assumenda, placeat unde
+                            molestias!
+                            Ratione cupiditate minima odio adipisci.</p>
+                    </div>
+                    <img src="./img/manBio.jpg" alt="man">
 
+                </div>
+                <div class="right">
+                    <h1>Contact</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eveniet animi sunt vel
+                        placeat, ipsum deserunt numquam veritatis, quasi officia repellendus? Deserunt dignissimos
+                        perferendis ad dolorum amet hic sint corporis.
+                        Neque, ipsa inventore rerum reiciendis corporis sequi pariatur veniam ad fuga nobis! Debitis
+                        quia animi sed quae perspiciatis nulla magnam minus deleniti numquam aliquid, dolor quisquam
+                        voluptas corporis eveniet dignissimos.
+                    </p>
+                </div>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+            &copy; 2021 Lorem Ipsum
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
